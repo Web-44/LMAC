@@ -32,12 +32,12 @@ public class Parser {
 			if (obj.get("data").isJsonObject()) {
 				actions.get(type).execute(obj.get("data").getAsJsonObject());
 			} else {
-				Main.instance.getApi().displayMessageInChat("§8[§bLaby§2AC§8] §cDetected an invalid built message: " + type);
-				Main.instance.getApi().displayMessageInChat("§8[§bLaby§2AC§8] §cPlease report this bug on §ats.AntiCraft.de");
+				Main.instance.getApi().displayMessageInChat("[LabyAC] Detected an invalid built message: " + type);
+				Main.instance.getApi().displayMessageInChat("[LabyAC] Please report this bug on ts.AntiCraft.de");
 			}
 		} else {
-			Main.instance.getApi().displayMessageInChat("§8[§bLaby§2AC§8] §cDetected an invalid message type: " + type);
-			Main.instance.getApi().displayMessageInChat("§8[§bLaby§2AC§8] §cPlease report this bug on §ats.AntiCraft.de");
+			Main.instance.getApi().displayMessageInChat("[LabyAC] Detected an invalid message type: " + type);
+			Main.instance.getApi().displayMessageInChat("[LabyAC] Please report this bug on ts.AntiCraft.de");
 		}
 	}
 	
